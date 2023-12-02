@@ -12,8 +12,14 @@ var quizTimer = 60;
 //myTime.textContent = "marius";
 
 //declaring array answers
-var question1 =  "Arrays in Javasript can be used to store _______."
-var question1Options = ["numbers and strings", "others arrays", "booleans", "all of the above."]
+var question1 =  "How do you create a function in javascript?"
+var question1Options = ["function = myFunction()", "function: myFunction", "function myFunction()", "function = myFunction{}"]
+var question2 =  "Inside which element do we put the Javascript"
+var question2Options = ["<javascript>", "<scripting", "<script>", "<js>"]
+var question3 =  "What is the correct syntax for referring to an external javasript file?"
+var question3Options = ["<script href='xxx.js'>", "<script name='xxx.js'", "<script meta='xxx.js'", "<script src='xxx.js'"]
+var question4 =  "How do you write 'Hello World in an alert box?"
+var question4Options = ["mgsBox('Hellow World');", "msg('Hellow World');", "alert('Hellow World');", "alertBox('Hellow World');"]
 
 var myTimer = setInterval(countDown, 1000);
 
@@ -46,6 +52,7 @@ function firstQuestion (){
 function init(){   
 body.appendChild(mainSection);
 mainSection.appendChild(quizHeading);
+quizHeading.setAttribute("style", "margin-bottom:10px")
 mainSection.appendChild(quizExplain);
 mainSection.appendChild(button);
 }

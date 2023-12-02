@@ -7,9 +7,15 @@ header {
 body {
     text-align: center;
     margin:auto;
+   
 }
 
-
+button {
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+}
 
 .theQuestion {
     width: 50%;
